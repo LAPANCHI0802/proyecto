@@ -5,98 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-image: url(imagen/aseen/fondo.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            width: 100%;
-            margin: 5px;
-            border: 5px;
-            padding: 5px;
-
-        }
-        header{
-            background-color: #C993AF;
-            align-items: center;
-            width: 100%;
-            height: 300px;
-        }
-        .img-logo{
-            display: flex;
-            justify-content: flex-start;
-            padding: 20px;
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-        }
-        .img-vaner{
-            display: flex;
-            justify-content: center;
-            width: 100px;
-            height: 100px;
-        }
-        .buscador{
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-start;
-        }
-        header nav{
-            display: flex;
-            justify-content: center;
-            justify-content: space-around;
-            align-items: flex-start;
-        }
-        main{
-            background-color: aliceblue;
-            justify-content: cente;
-            width: 1200px;
-        }
-        .img-venta{
-            display: flex;
-            flex-direction: column;
-           
-        }
-    </style>
+   <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
     <header>
-        <div class="img-logo"><img src="imagen/aseen/logo.png" alt=""></div>
-        <div class="buscador">
-            <input type="text">
-            <label for="buscador">🔎</label>
+        <div class="logo-bus">
+            <div><img src="imagen/aseen/logo.png" alt="" class="img-logo"></div>
+            <div class="buscador">
+                <input type="text">
+                <label for="buscador">🔎</label>
+            </div>
         </div>
         <nav>
-            <a href="http://127.0.0.1:5500/proyecto/cuadernos.html">cuadernos</a>
-            <a href="http://127.0.0.1:5500/proyecto/lapiceras.html">lapicera</a>
-            <a href="http://127.0.0.1:5500/proyecto/llaveros.html">llaveros</a>
-            <a href="http://127.0.0.1:5500/proyecto/pines_separadores.html">pines y searadores</a>
+            <a href="cuadernos.html">cuadernos</a>
+            <a href="lapiceras.html">lapicera</a>
+            <a href="llaveros.html">llaveros</a>
+            <a href="pines_separadores.html">pines y separadores</a>
+            <a href="formulario.html">formulario</a>
         </nav>
-        <div class="img-vaner"><img src="imagen/aseen/vaner.png" alt=""></div>
+        <!--<div class="img-vaner"><img src="imagen/aseen/vaner.png" alt=""></div>-->
     </header>
     <main>
-        <article class="img-venta">
-            <a href="http://127.0.0.1:5500/proyecto/cuadernos.html"> <img src="imagen/aseen/img-prim-cua.png" alt="" class="imagen"  width: 100px; ></a>
-        </article>
-        <article class="img-venta">
-            <a href="http://127.0.0.1:5500/proyecto/lapiceras.html"><img src="imagen/aseen/img-prim-lapi.png" alt="" class="imagen" width: 100px; ></a>
-        </article>
-        <article class="img-venta">
-            <a href="http://127.0.0.1:5500/proyecto/llaveros.html"><img src="imagen/aseen/img-prim-llave.png" alt="" class="imagen" width: 100px; ></a>
-        </article>
-        <article class="img-venta">
-            <a href="http://127.0.0.1:5500/proyecto/pines_separadores.html"><img src="imagen/aseen/img-prim-pin-y-se.png" alt="" class="imagen" width: 100px;></a>
-        </article>
+        <div class="img-venta">
+            <article>
+                <a href="http://127.0.0.1:5500/proyecto/cuadernos.html"> <img src="imagen/aseen/img-prim-cua.png"
+                        alt=""></a>
+                <p>¿buscas cuadernos distintos?</p>
+            </article>
+            <article>
+                <a href="http://127.0.0.1:5500/proyecto/lapiceras.html"><img src="imagen/aseen/img-prim-lapi.png"
+                        alt=""></a>
+                <p>¿quieres escribir tus secretos con otro estilo?</p>
+            </article>
+            <article>
+                <a href="http://127.0.0.1:5500/proyecto/llaveros.html"><img src="imagen/aseen/img-prim-llave.png"
+                        alt=""></a>
+                <p>decora tus llaves, tus mochilas y lo que deses</p>
+            </article>
+            <article>
+                <a href="http://127.0.0.1:5500/proyecto/pines_separadores.html"><img
+                        src="imagen/aseen/img-prim-pin-y-se.png" alt=""></a>
+                <p>imaginate tu mochilas y tus libros distintos al restos</p>
+            </article>
+        </div>
     </main>
     <footer>
         <section>
-            <div><img src="imagen/aseen/logo.png" alt=""></div>
+            <div class="logo-foo"><img src="imagen/aseen/logo.png" alt=""></div>
             <ul>
                 <li>📧 ariadnasalas0802@gmail.com</li>
                 <li>📞Telefono: 299 593-3877</li>
-                <li> <a href="https://www.instagram.com/dulce_rouse_encuadernacion/?hl=es-es"> 📷Instragram</a></li>
+                <li> <a href="https://www.instagram.com/dulce_rouse_encuadernacion/?hl=es-es"> 📷 Instragram</a></li>
             </ul>
         </section>
 </body>
