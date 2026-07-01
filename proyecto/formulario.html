@@ -4,13 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>dulce_rouse_encuadernacion</title>
+    <style>
+        body {
+            background-image: url(imagen/aseen/fondo.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+        }
+
+        /*header*/
+        header {
+            background-color: #C993AF;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            padding: 0 auto;
+        }
+
+        .img-logo {
+            display: flex;
+            justify-content: flex-start;
+            padding: 20px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .logo-bus {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            align-items: center;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #99ddee;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        header nav a:hover {
+            transform: scale(1.3);
+            transition: 0.3s;
+            color: white;
+        }
+
+        /*main*/
+        main {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            width: 1200px;
+            height: 600px;
+            padding: 10px;
+        }
+        main div label{
+            color: #afc09c;
+        }
+
+        /*footer*/
+        footer {
+            background-color: #ee73ad;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+        }
+
+        footer div img {
+            width: 150px;
+            border-radius: 50%;
+            padding-top: 15px;
+        }
+
+        footer section ul {
+            color: #AFCFD7;
+            text-align: center;
+            list-style: none;
+            font-size: 25px;
+        }
+
+        footer section a {
+            text-decoration: none;
+            color: #AFCFD7;
+            font-size: 25px;
+        }
+
+        .logo-foo {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="logo-bus">
-            <div><img src="imagen/aseen/logo.png" alt="" class="img-logo"></div>
+            <div class="img-logo"><img src="imagen/aseen/logo.png" alt="" class="img-logo"></div>
             <div class="buscador">
                 <input type="text">
                 <label for="buscador">🔎</label>
@@ -28,10 +128,11 @@
     <main>
         <h1>quieres registrarte para descubrir lo hermoso de las encudernaciones</h1>
         <form action="">
+            
             <div>
                 <label for="nombre y apellido">Nombre y Apellido</label>
                 <input type="text" name="nombre y apellido" id="nombre y apellido">
-            
+
                 <label for="telefono">numero de telefono</label>
                 <input type="text" name="telefono" id="telefono">
 
@@ -40,12 +141,12 @@
             </div>
             <div>
                 <label for="consulta">seleccionar tu consulta</label>
-            <select name="consulta" id="consulta">
-                <option value="">selecciona lo que dese hacer</option>
-                <option value="option1">¿quieres hacer un reclamo?</option>
-                <option value="option2">¿con que metodo desea pagar?</option>
-                <option value="opcion3">¿quieres comprar?</option>
-            </select>
+                <select name="consulta" id="consulta">
+                    <option value="">selecciona lo que dese hacer</option>
+                    <option value="option1">¿quieres hacer un reclamo?</option>
+                    <option value="option2">¿con que metodo desea pagar?</option>
+                    <option value="opcion3">¿quieres comprar?</option>
+                </select>
             </div>
             <div>
                 <label for="opinion">¿quieres dar tu opinion de tu producto?</label>
