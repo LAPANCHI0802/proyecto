@@ -1,23 +1,22 @@
- body {
+ body {/*en el body use los background para poner el fondo*/
      background-image: url(imagen/aseen/fondo.png);
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
      width: 100%;
-
-
  }
 
- header {
-     background-color: #C993AF;
+ header { /*use el header para el home */
+     background-color: #C993AF;/*se le da el color al fonde del header*/
      align-items: center;
      width: 100%;
      height: 300px;
      padding: 0 auto;
+     border-radius: 15px;
  }
 
- .img-logo {
-     display: flex;
+ .img-logo {/*se usa un container para darle las propiedades a varias cosas que esten a dentro de la caja*/
+     display: flex; 
      justify-content: flex-start;
      padding: 20px;
      border-radius: 50%;
@@ -31,7 +30,7 @@
             
         }*/
 
- .logo-bus {
+ .logo-bus { /*clase*/
      display: flex;
      justify-content: space-between;
      align-items: flex-start;
@@ -39,7 +38,7 @@
  }
 
 
- header nav {
+ header nav { /*heredacion*/
      display: flex;
      justify-content: center;
      justify-content: space-around;
@@ -47,35 +46,35 @@
 
  }
 
- header nav a {
+ header nav a { /*heredacion*/
      text-decoration: none;
      color: #99ddee;
      font-size: 30px;
      font-weight: 700;
  }
 
- header nav a:hover {
+ header nav a:hover { /*el hover hace que cuando se pasa el cursor pasa sobre un texto o un botton*/
      transform: scale(1.3);
      transition: 0.3s;
      color: white;
  }
 
  /*main*/
- main {
-     flex-wrap: wrap;
+ main { /*el main es el cuerpo del html o de la pagina*/
+     flex-wrap: wrap; /*hace que las imagenes o lo que es te adentro se valla poniendo
+      al lado deponde del tamaño del aparato que lo este viendo*/
      display: flex;
      justify-content: center;
  }
 
- .img-venta {
+ .img-venta {/*clase*/
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
      gap: 15px;
-     /**/
  }
 
- main div article a img {
+ main div article a img {/*seleccion de heredacion*/
      width: 600px;
      height: 600px;
      display: flex;
@@ -83,7 +82,7 @@
      padding: 50px;
  }
 
- main p {
+ main p {/*heredado del main*/
      color: white;
      background-color: #AFCFD7;
      border-radius: 20px;
@@ -94,34 +93,34 @@
  }
 
  /*footer*/
- footer {
+ footer {/*el footer es el pie de pagina de la pagina*/
      background-color: #ee73ad;
      display: flex;
      justify-content: center;
      border-radius: 20px;
  }
 
- footer div img {
+ footer div img {/*heredacion*/
      width: 150px;
      border-radius: 50%;
      padding-top: 15px;
  }
 
- footer section ul {
+ footer section ul {/*heredacion*/
      color: #AFCFD7;
      text-align: center;
      list-style: none;
      font-size: 25px;
  }
 
- footer section a {
+ footer section a {/*heredacion*/
      text-decoration: none;
      color: #AFCFD7;
      font-size: 25px;
 
  }
 
- .logo-foo {
+ .logo-foo {/*clase*/
      display: flex;
      justify-content: center;
  }
