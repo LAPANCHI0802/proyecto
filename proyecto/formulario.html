@@ -61,16 +61,28 @@
 
         /*main*/
         main {
-            flex-wrap: wrap;
             display: flex;
             justify-content: center;
             background-color: rgb(255, 255, 255);
-            width: 1200px;
+            width: 1000px;
             height: 600px;
             padding: 10px;
         }
-        main div label{
-            color: #afc09c;
+        main div label {
+            color: #2a2e26;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: #99ddee;
+
+        }
+        legend{
+            color: #ee73ad;
+        }
+        h1{
+            font-family: monospace;
+            color: #99ddee;
         }
 
         /*footer*/
@@ -128,34 +140,50 @@
     <main>
         <h1>quieres registrarte para descubrir lo hermoso de las encudernaciones</h1>
         <form action="">
-            
             <div>
-                <label for="nombre y apellido">Nombre y Apellido</label>
-                <input type="text" name="nombre y apellido" id="nombre y apellido">
-
-                <label for="telefono">numero de telefono</label>
+                <fieldset>
+                    <legend>Nombre y Apellido</legend>
+                    <label for="nombre y apellido"></label>
+                    <input type="text" name="nombre y apellido" id="nombre y apellido">
+                </fieldset>
+                <fieldset>
+                    <legend>numero de telefono</legend>
+                <label for="telefono"></label>
                 <input type="text" name="telefono" id="telefono">
+                </fieldset>
+                <fieldset>
+                    <legend>ingrese su gmail</legend>
+                    <label for="email"></label>
+                    <input type="email" name="gmail" id="email">
+                </fieldset>
+            </div>
 
-                <label for="email">ingrese su gmail</label>
-                <input type="email" name="gmail" id="email">
-            </div>
             <div>
-                <label for="consulta">seleccionar tu consulta</label>
-                <select name="consulta" id="consulta">
-                    <option value="">selecciona lo que dese hacer</option>
-                    <option value="option1">¿quieres hacer un reclamo?</option>
-                    <option value="option2">¿con que metodo desea pagar?</option>
-                    <option value="opcion3">¿quieres comprar?</option>
-                </select>
+                <fieldset> 
+                    <legend>seleccionar tu consulta</legend>
+                    <label for="consulta"></label>
+                    <select name="consulta" id="consulta">
+                        <option value="">selecciona lo que dese hacer</option>
+                        <option value="option1">¿quieres hacer un reclamo?</option>
+                        <option value="option2">¿con que metodo desea pagar?</option>
+                        <option value="opcion3">¿quieres comprar?</option>
+                    </select>
+                </fieldset>
             </div>
-            <div>
-                <label for="opinion">¿quieres dar tu opinion de tu producto?</label>
-                <textarea name="opinion" id="option" cols="20" rows="10"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="enviar">
-                <input type="reset" value="limpiar">
-            </div>
+            <fieldset>
+                <legend>da tu opinion</legend>
+                <div>
+                    <label for="opinion"></label>
+                    <textarea name="opinion" id="option" cols="20" rows="10"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>enviar</legend>
+                <div>
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="limpiar">
+                </div>
+            </fieldset>
         </form>
     </main>
     <footer>
